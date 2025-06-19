@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,97 +14,128 @@
       background-color: #ffffff;
       color: #333333;
     }
-    h1, h2 {
+
+    h1,
+    h2 {
       color: seagreen;
     }
+
     section {
       margin-bottom: 20px;
     }
+
     .header-image {
       text-align: center;
-      background-image: url("spotsendai.jpg"); /* 背景画像を指定 */
-      background-size: cover;                  /* 画像を枠いっぱいに表示 */
-      background-position: center top -10px;             /* 画像を中央に配置 */
-      background-repeat: no-repeat;            /* 画像を繰り返さない */
-      padding: 50px;                           /* 上下左右の余白を調整（適宜調整）*/
-      color: #000000;                             /* 文字色（画像とのコントラスト調整）*/
-      position: relative;                      /* 半透明レイヤー用 */
-      overflow: hidden;    /* はみ出さないようにする */
-      isolation: isolate;                 
+      background-image: url("spotsendai.jpg");
+      /* 背景画像を指定 */
+      background-size: cover;
+      /* 画像を枠いっぱいに表示 */
+      background-position: center top -10px;
+      /* 画像を中央に配置 */
+      background-repeat: no-repeat;
+      /* 画像を繰り返さない */
+      padding: 50px;
+      /* 上下左右の余白を調整（適宜調整）*/
+      color: #000000;
+      /* 文字色（画像とのコントラスト調整）*/
+      position: relative;
+      /* 半透明レイヤー用 */
+      overflow: hidden;
+      /* はみ出さないようにする */
+      isolation: isolate;
     }
 
-    
+
     .header-image::before {
       content: "";
-      background-color: rgba(255,255,255,0.6); 
+      background-color: rgba(255, 255, 255, 0.6);
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      z-index: 0;                              
+      z-index: 0;
     }
-      
 
-    .header-image > * {
+
+    .header-image>* {
       position: relative;
-      z-index: 1;                              /* テキストを最前面に配置 */
+      z-index: 1;
+      /* テキストを最前面に配置 */
     }
 
     .table-container {
-      display: flex;       /* 子要素を横並びにする */
-      gap: 10px;           /* 表間に20pxの隙間を設定 */
-      align-items: flex-start;  /* 表の上端を揃える */
+      display: flex;
+      /* 子要素を横並びにする */
+      gap: 10px;
+      /* 表間に20pxの隙間を設定 */
+      align-items: flex-start;
+      /* 表の上端を揃える */
     }
+
     .table-container table:nth-child(1) td:first-child,
-.table-container table:nth-child(1) th:first-child {
-  width: 120px; /* お好みの幅に調整 */
-}
-.table-container table:nth-child(1) td:nth-child(4),
-.table-container table:nth-child(1) th:nth-child(4) {
-  width: 10px; /* お好みの幅に調整 */
-}
+    .table-container table:nth-child(1) th:first-child {
+      width: 120px;
+      /* お好みの幅に調整 */
+    }
+
+    .table-container table:nth-child(1) td:nth-child(4),
+    .table-container table:nth-child(1) th:nth-child(4) {
+      width: 10px;
+      /* お好みの幅に調整 */
+    }
+
     .table-container table:nth-child(2) td:first-child,
-.table-container table:nth-child(2) th:first-child {
-  width: 120px; /* お好みの幅に調整 */
-}
+    .table-container table:nth-child(2) th:first-child {
+      width: 120px;
+      /* お好みの幅に調整 */
+    }
 
-.table-container table.big {
-  flex: 2;    /* 大きい表：利用可能な幅の3/4を使うイメージ */
-}
+    .table-container table.big {
+      flex: 2;
+      /* 大きい表：利用可能な幅の3/4を使うイメージ */
+    }
 
-.table-container table.small {
-  flex: 1;    /* 小さい表：利用可能な幅の1/4を使うイメージ */
-}
+    .table-container table.small {
+      flex: 1;
+      /* 小さい表：利用可能な幅の1/4を使うイメージ */
+    }
 
     table {
       border-collapse: collapse;
       width: 100%;
       margin-top: 20px;
     }
-    th, td {
+
+    th,
+    td {
       border: 1px solid black;
       padding: 5px;
       text-align: center;
     }
+
     th {
       background-color: #f2f2f2;
       /* font-weight: normal;*/
     }
-    tbody tr td:first-child {
-  background-color: #f2f2f2;
-}
 
+    tbody tr td:first-child {
+      background-color: #f2f2f2;
+    }
   </style>
 </head>
+
 <body>
-  <h1 style="text-align: center;" class="header-image"> <span style="color: #000000;">Conference on Several Complex Variables <br>
-    \(-L^2\) Estimates and Extensions\(-\) </span> </h1>
+  <h1 style="text-align: center;" class="header-image"> <span style="color: #000000;">Conference on Several Complex
+      Variables <br>
+      \(-L^2\) Estimates and Extensions\(-\) </span> </h1>
   <section>
     <h2>Information</h2>
     <ul>
       <li>September 22nd \(-\) 26th, 2025</li>
-      <li>Espace, 2nd Floor, Katahira North Gate Building, <a href="https://www.tohoku.ac.jp/en/about/map_directions.html">Katahira Campus</a> , Tohoku University, Sendai, Japan</li>
+      <li>Espace, 2nd Floor, Katahira North Gate Building, <a
+          href="https://www.tohoku.ac.jp/en/about/map_directions.html">Katahira Campus</a> , Tohoku University, Sendai,
+        Japan</li>
     </ul>
   </section>
   <section>
@@ -115,7 +147,7 @@
       <li>Mario Chan (Pusan National University)</li>
       <li>Young-jun Choi (Pusan National University)</li>
       <li>Runze Zhang (Université Côte d'Azur)</li>
-      <li>Zhi Li (Peking University)</li>
+      <li>Zhi Li (Beijing University of Posts and Telecommunications​​)</li>
       <li>Shota Kikuchi (National Institute of Technology, Suzuka College)</li>
       <li>Dano Kim (Seoul National University)</li>
       <li>Jiafu Ning (Central South University)</li>
@@ -130,14 +162,16 @@
   </section>
   <section>
     <h2>Registration and Accommodation</h2>
-   <!-- <p>Please fill out this
+    <!-- <p>Please fill out this
       <a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=zR8vE8HBMUKOm4yDZFuJTO_AbxgQjGJAmOIbWRsIU85UN1EzSU1ZMlc5R0wxNTlVMFBRUlI1WlhSTC4u" target="_blank">
      Microsoft Form
 </a>
 . --> <!-- Microsoft form-->
-※Some participants have received messages from a “travel agency” offering to arrange hotel bookings, but please be careful--<strong>those are spam!</strong>
-The organizers will contact the participants directly regarding hotel reservations, visa documents, and other logistical details. 
-</p>
+    ※Some participants have received messages from a “travel agency” offering to arrange hotel bookings, but please be
+    careful--<strong>those are spam!</strong>
+    The organizers will contact the participants directly regarding hotel reservations, visa documents, and other
+    logistical details.
+    </p>
   </section>
   <section>
     <h2>Access</h2>
@@ -153,10 +187,10 @@ The organizers will contact the participants directly regarding hotel reservatio
     <div class="table-container">
       <table class="small">
         <thead>
-        <tr>
-          <th></th>
-          <th>9/22</th>
-        </tr>
+          <tr>
+            <th></th>
+            <th>9/22</th>
+          </tr>
         <tbody>
           <tr>
             <td>10:00-11:30</td>
@@ -184,38 +218,38 @@ The organizers will contact the participants directly regarding hotel reservatio
           </tr>
         </tbody>
         </tbody>
-      </thead>
+        </thead>
       </table>
 
-<table class="small">
-      <thead>
-        <tr>
-          <th></th>
-          <th>9/23</th>
-        </tr>
-      </thead>
-      <tbody>
-         <tr>
-          <td>9:30-10:30</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>10:50-11:50</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>12:10-13:10</td>
-          <td></td>
-        </tr>
-         <tr>
-          <td>Lunch</td>
-          <td></td>
-        </tr>
-         <tr>
-          <td></td>
-          <td>Discussion</td>
-        </tr>
-        <!--<tr>
+      <table class="small">
+        <thead>
+          <tr>
+            <th></th>
+            <th>9/23</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:30-10:30</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10:50-11:50</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>12:10-13:10</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>Discussion</td>
+          </tr>
+          <!--<tr>
           <td></td>
           <td></td>
         </tr>
@@ -226,19 +260,95 @@ The organizers will contact the participants directly regarding hotel reservatio
     </table> -->
 
 
-    <table class="small">
+          <table class="small">
+            <thead>
+              <tr>
+                <th></th>
+                <th>9/24</th>
+              </tr>
+            <tbody>
+              <tr>
+                <td>10:00-11:30</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>11:20-12:20</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Lunch</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>14:00-15:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>15:20-16:20</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>16:30-17:00</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Banquet</td>
+              </tr>
+            </tbody>
+        </tbody>
+        </thead>
+      </table>
+
+
+      <table class="small">
         <thead>
-        <tr>
-          <th></th>
-          <th>9/24</th>
-        </tr>
+          <tr>
+            <th></th>
+            <th>9/25</th>
+          </tr>
+        </thead>
         <tbody>
           <tr>
-            <td>10:00-11:30</td>
+            <td>10:00-12:00</td>
+            <td>Discussion</td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
             <td></td>
           </tr>
           <tr>
-            <td>11:20-12:20</td>
+            <td>13:00-14:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>14:20-15:20</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>15:40-16:10</td>
+            <td></td>
+        </tbody>
+      </table>
+
+      <table class="small">
+        <thead>
+          <tr>
+            <th></th>
+            <th>9/25</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>9:30-10:30</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>10:50-11:50</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>12:10-13:10</td>
             <td></td>
           </tr>
           <tr>
@@ -246,89 +356,13 @@ The organizers will contact the participants directly regarding hotel reservatio
             <td></td>
           </tr>
           <tr>
-            <td>14:00-15:00</td>
             <td></td>
-          </tr>
-          <tr>
-            <td>15:20-16:20</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>16:30-17:00</td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>Banquet</td>
+            <td>Discussion</td>
           </tr>
         </tbody>
-        </tbody>
-      </thead>
       </table>
 
-
-    <table class="small">
-      <thead>
-        <tr>
-          <th></th>
-          <th>9/25</th>
-        </tr>
-      </thead>
-      <tbody>
-         <tr>
-          <td>10:00-12:00</td>
-          <td>Discussion</td>
-        </tr>
-        <tr>
-          <td>Lunch</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>13:00-14:00</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>14:20-15:20</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>15:40-16:10</td>
-          <td></td>
-      </tbody>
-    </table>
-
-    <table class="small">
-      <thead>
-        <tr>
-          <th></th>
-          <th>9/25</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>9:30-10:30</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>10:50-11:50</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>12:10-13:10</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Lunch</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>Discussion</td>
-        </tr>
-      </tbody>
-    </table> 
-
-    <!-- <table class="small">
+      <!-- <table class="small">
       <thead>
         <tr>
           <th></th>
@@ -370,11 +404,13 @@ The organizers will contact the participants directly regarding hotel reservatio
   <section>
     <h2>Organizers</h2>
     <ul>
-      <li><a href="https://sites.google.com/view/takahiro-inayama-webpage/home">Takahiro Inayama</a> (Tokyo University of Scicence, inayama_takahiro[^_^]rs.tus.ac.jp) </li>
+      <li><a href="https://sites.google.com/view/takahiro-inayama-webpage/home">Takahiro Inayama</a> (Tokyo University
+        of Scicence, inayama_takahiro[^_^]rs.tus.ac.jp) </li>
       <li><a href="https://sites.google.com/view/math-matsumura">Shin-ichi Matsumura</a> (Tohoku University) </li>
       <li><a href="https://sites.google.com/view/yuta-watanabe-math-webpage">Yuta Watanabe</a> (Chuo University) </li>
     </ul>
     <p>Replace [^_^] by @.</p>
   </section>
 </body>
+
 </html>
